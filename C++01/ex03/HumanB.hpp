@@ -6,24 +6,25 @@
 /*   By: jomirand <jomirand@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 17:22:27 by jomirand          #+#    #+#             */
-/*   Updated: 2023/10/30 17:26:37 by jomirand         ###   ########.fr       */
+/*   Updated: 2023/10/31 11:12:20 by jomirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HUMANB_HPP
 # define HUMANB_HPP
 
-#include "Weapon.hpp"
+# include "Weapon.hpp"
 
-class HumanA
+class HumanB
 {
 	private:
-		Weapon		weapon;
+		Weapon*		weapon;
 		std::string	name;
 	public:
-		HumanB();
+		HumanB(std::string name);
 		~HumanB();
 		void	attack();
+		void	setWeapon(Weapon&);
 };
 
 #endif

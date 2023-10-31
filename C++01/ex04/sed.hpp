@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.cpp                                         :+:      :+:    :+:   */
+/*   sed.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jomirand <jomirand@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 17:06:58 by jomirand          #+#    #+#             */
-/*   Updated: 2023/10/31 11:31:04 by jomirand         ###   ########.fr       */
+/*   Created: 2023/10/31 11:51:00 by jomirand          #+#    #+#             */
+/*   Updated: 2023/10/31 15:25:46 by jomirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanA.hpp"
-#include "Weapon.hpp"
+#ifndef SED_HPP
+# define SED_HPP
 
-HumanA::HumanA(std::string name, Weapon& weapon) : weapon(weapon), name(name)
-{
-}
+# include <iostream>
+# include <fstream>
 
-HumanA::~HumanA() {}
-
-void	HumanA::attack()
-{
-	std::cout << this->name << " attacks with their " << this->weapon.getType() << std::endl;
-}
+#endif

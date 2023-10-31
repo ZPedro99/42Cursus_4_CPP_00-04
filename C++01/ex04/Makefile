@@ -5,12 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jomirand <jomirand@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/10/30 17:02:05 by jomirand          #+#    #+#              #
-#    Updated: 2023/10/31 11:30:08 by jomirand         ###   ########.fr        #
+#    Created: 2023/10/31 11:43:40 by jomirand          #+#    #+#              #
+#    Updated: 2023/10/31 15:25:17 by jomirand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Violence
+NAME = Sed
 
 RESET   = \033[0m
 BLACK   = \033[1;30m
@@ -27,9 +27,6 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 RM = rm -rf
 
 SRCS = 	main.cpp\
-		Weapon.cpp\
-		HumanA.cpp\
-		HumanB.cpp\
 
 OBJS = $(SRCS:%.cpp=%.o)
 
@@ -38,7 +35,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CXX) $(CPPFLAGS) $(OBJS) -o $(NAME)
 	clear
-	@echo "$(GREEN)./Violence executable is ready!$(RESET)"
+	@echo "$(GREEN)./Sed executable is ready!$(RESET)"
 
 clean:
 	@$(RM) $(OBJS)
